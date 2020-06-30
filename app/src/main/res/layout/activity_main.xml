@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:background="#2cc991"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "로그인"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:fontFamily="@font/gyeonggi"
+        android:textSize="48dp"
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:paddingVertical="10dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/EditText_InputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="#ffffff"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_username"
+        android:fontFamily="@font/gyeonggi"
+        android:hint="  아이디를 입력하세요"
+        android:importantForAutofill="no"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true"
+        tools:ignore="LabelFor"></EditText>
+
+    <EditText
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/EditText_InputPassword"
+        tools:ignore="LabelFor"
+        android:drawableLeft="@drawable/ic_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textPassword"
+        android:importantForAutofill="no"
+        android:cursorVisible="true"
+        android:fontFamily="@font/gyeonggi"
+        android:hint="  비밀번호를 입력하세요"
+        android:singleLine="true"
+        android:background="@drawable/form"></EditText>
+
+    <Button
+        android:id="@+id/Button_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="7dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:fontFamily="@font/gyeonggi"
+        android:background="@drawable/button_background3"
+        android:text="로그인"></Button>
+
+    <Button
+        android:id="@+id/Button_Join"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="13dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:fontFamily="@font/gyeonggi"
+        android:background="@drawable/button_background3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"></Button>
+
+
+</LinearLayout>

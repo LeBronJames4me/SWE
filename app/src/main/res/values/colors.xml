@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9999</color>
+    <color name="colorPrimaryDark">#ff9999</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name= "violet">#660558</color>
+    <color name="colorPurple">#990085</color>
+    <color name = "softPink">#ffdeec</color>
+    <color name = "softBlue">#20a5f7</color>
+</resources>

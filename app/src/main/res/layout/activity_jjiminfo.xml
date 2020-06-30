@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JjimInfoActivity"
+    android:gravity="center_horizontal"
+    android:background="#a1dbff"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginVertical="15dp"
+        android:gravity="center_horizontal"
+        android:text="찜한 방 정보"
+        android:textSize="27dp"
+        android:fontFamily="@font/gyeonggi"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="빌라 명"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:layout_weight="3"
+        android:background="@color/softPink"
+        android:fontFamily="@font/gyeonggi"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/TextView_Roomname"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:background="#ffffff"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:fontFamily="@font/gyeonggimed"
+        android:text="방 이름contents"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="방 위치"
+            android:layout_weight="3"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:background="@color/softPink"
+            android:fontFamily="@font/gyeonggi"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:textSize="18dp"
+            />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="18dp"
+        android:id="@+id/TextView_Roomposition"
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gyeonggimed"
+        android:text="방 위치 contents"
+        android:background="#ffffff"
+        android:layout_marginRight="25dp"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="특이사항"
+            android:paddingHorizontal="5dp"
+            android:background="@color/softPink"
+            android:layout_weight="3"
+            android:fontFamily="@font/gyeonggi"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:paddingVertical="5dp"
+            android:textSize="18dp"
+            />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="15dp"
+        android:id="@+id/TextView_Roomdesc"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gyeonggimed"
+        android:text="방 설명 contents"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:layout_marginRight="25dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"
+        android:layout_weight="3"
+        android:paddingHorizontal="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gyeonggi"
+        android:text="소유자이름"
+        android:paddingVertical="5dp"
+        android:background="@color/softPink"
+        />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="18dp"
+            android:id="@+id/TextView_Ownername"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gyeonggimed"
+            android:padding="5dp"
+            android:text="소유자 contents"
+            android:background="#ffffff"
+            android:layout_marginRight="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"
+        android:background="@color/softPink"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:paddingHorizontal="5dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gyeonggi"
+        android:paddingVertical="5dp"
+        android:text="관리자연락처"
+        />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="18dp"
+            android:id="@+id/TextView_Phonenumber"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gyeonggimed"
+            android:padding="5dp"
+            android:text="연락처 contents"
+            android:background="#ffffff"
+            android:layout_marginRight="25dp"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginVertical="10dp"
+        android:id="@+id/ImageView_RoomPhoto"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:text="방 사진"
+        android:src="@drawable/defaultbill"
+        />
+
+    <Button
+        android:background="#20a5f7"
+        android:gravity="center"
+        android:id="@+id/Button_call"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gyeonggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부동산에 전화하기"
+        >
+    </Button>
+</LinearLayout>

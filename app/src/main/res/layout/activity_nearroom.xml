@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#a1dbff"
+    tools:context=".NearRoomActivity"
+    >
+
+
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:id="@+id/TextView_Title"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/gyeonggi"
+        android:text="주변 방 목록"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/LinearLayout_Welcome"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/LinearLayout_Welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayout_Map"
+        app:layout_constraintTop_toBottomOf="@id/TextView_Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 지점 부근의 자취방 목록입니다.\n관심 있는 방을 클릭하여 정보를 확인하세요."
+            android:fontFamily="@font/gyeonggi"
+
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout_Welcome"
+        app:layout_constraintBottom_toTopOf="@+id/ConstraintLayout_Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/FrameLayout_Map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout_Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/FrameLayout_Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <Button
+            android:background="@color/softBlue"
+            android:paddingHorizontal="12dp"
+            android:id="@+id/Button_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="상세 정보"
+            android:fontFamily="@font/gyeonggi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

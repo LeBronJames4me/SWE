@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moappfinal_jachuisochui">
+    <uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="자취소취할수있취"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignUp"/>
+        <activity android:name=".TempActivity"/>
+        <activity android:name=".FindingRoomActivity"/>
+        <activity android:name=".RoomInfoActivity"/>
+        <activity android:name=".NearRoomActivity"/>
+        <activity android:name=".SelectMenuActivity"/>
+        <activity android:name=".RoomOfferActivity"/>
+        <activity android:name=".RoomSaleActivity"/>
+        <activity android:name=".RoomSaleInfoAcitivy"/>
+        <activity android:name=".JjimRoomListActivity"/>
+        <activity android:name=".JjimInfoActivity"/>
+
+        <meta-data
+            android:name = "com.naver.maps.map.CLIENT_ID"
+            android:value = "7lti1r4kzv" />
+    </application>
+
+</manifest>
+

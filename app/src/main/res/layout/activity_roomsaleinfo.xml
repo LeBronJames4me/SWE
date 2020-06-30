@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80cfff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="7dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:text="내놓은 방 정보"
+        android:fontFamily="@font/gyeonggi"
+        android:textSize="30dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#f0e1f7"
+        >
+
+        <TableRow
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="방 이름"
+                android:fontFamily="@font/gyeonggimed"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="이름"
+                android:background="#ffffff"
+                android:fontFamily="@font/gyeonggilight"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="방 위치"
+                android:fontFamily="@font/gyeonggimed"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/location"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="위치"
+                android:background="#ffffff"
+                android:fontFamily="@font/gyeonggilight"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="방 설명"
+                android:fontFamily="@font/gyeonggimed"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/description"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="설명"
+                android:background="#ffffff"
+                android:fontFamily="@font/gyeonggilight"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="연락처"
+                android:fontFamily="@font/gyeonggimed"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tel"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="전화번호"
+                android:background="#ffffff"
+                android:fontFamily="@font/gyeonggilight"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnback"
+        android:background="#fcd2f7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gyeonggi"
+        android:onClick="onClick"
+        android:text="돌아가기"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
